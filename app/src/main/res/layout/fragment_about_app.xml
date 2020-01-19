@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutApp">
+
+    <TextView
+        android:id="@+id/aboutAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainMenuButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="igru u kojoj korisnik ima 4 moguća odgovora a samo jedan je točan. Igrica koja broji od 0 do 100 a korisnik mora reći koji je slijedeći broj. Ako je slijedeći broj djeljiv s 3 korisnik mora kliknuti fizz,  ako je djeljiv s 5 korisnik mora kliknuti buzz i ako je djeljiv i sa 3 i sa 5 korisnik mora kliknuti fizzbuzz, ako je nije djeljiv ni sa 3 ni sa 5 onda treba kliknuti slijedeći broj." />
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/baseline_keyboard_backspace_black_48dp"
+        android:onClick="backMainMenu" />
+</RelativeLayout>
