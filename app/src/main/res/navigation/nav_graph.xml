@@ -1,5 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.frangrgec.fizzbuzzdemo.MainMenu"
+        android:label="MainMenu">
+        <action
+            android:id="@+id/action_mainMenu_to_aboutApp2"
+            app:destination="@id/aboutApp2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_mainMenu_to_game"
+            app:destination="@id/game"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutApp2"
+        android:name="com.frangrgec.fizzbuzzdemo.AboutApp"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app">
+        <action
+            android:id="@+id/action_aboutApp2_to_mainMenu"
+            app:destination="@id/mainMenu"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/game"
+        android:name="com.frangrgec.fizzbuzzdemo.Game"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_game_to_lostGame"
+            app:destination="@id/lostGame"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_game_to_wonGame"
+            app:destination="@id/wonGame"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lostGame"
+        android:name="com.frangrgec.fizzbuzzdemo.LostGame"
+        android:label="fragment_lost_game"
+        tools:layout="@layout/fragment_lost_game">
+        <action
+            android:id="@+id/action_lostGame_to_mainMenu"
+            app:destination="@id/mainMenu"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_lostGame_to_game"
+            app:destination="@id/game"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wonGame"
+        android:name="com.frangrgec.fizzbuzzdemo.WonGame"
+        android:label="fragment_won_game"
+        tools:layout="@layout/fragment_won_game">
+        <action
+            android:id="@+id/action_wonGame_to_mainMenu"
+            app:destination="@id/mainMenu"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_wonGame_to_game"
+            app:destination="@id/game"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
 
 </navigation>

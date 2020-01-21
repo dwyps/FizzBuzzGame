@@ -27,6 +27,5 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/baseline_keyboard_backspace_black_48dp"
-        android:onClick="backMainMenu" />
+        android:background="@drawable/ic_arrow_back_black_24dp" />
 </RelativeLayout>
