@@ -1,15 +1,16 @@
-package com.frangrgec.fizzbuzzdemo
+package com.frangrgec.fizzbuzzdemo.fragments
 
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.frangrgec.fizzbuzzdemo.R
 import kotlinx.android.synthetic.main.fragment_main_menu.*
 
 class MainMenu : Fragment(), View.OnClickListener {
 
-    lateinit var navController: NavController
+    private lateinit var navController: NavController
 
     //Enables the about app menu
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +29,9 @@ class MainMenu : Fragment(), View.OnClickListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
-            R.id.aboutApp -> navController.navigate(R.id.action_mainMenu_to_aboutApp2)
+            R.id.aboutApp -> navController.navigate(
+                R.id.action_mainMenu_to_aboutApp2
+            )
         }
 
         return super.onOptionsItemSelected(item)

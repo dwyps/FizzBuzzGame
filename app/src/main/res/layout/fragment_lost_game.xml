@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LostGame">
+    tools:context=".fragments.LostGame">
 
     <TextView
         android:id="@+id/gameOverText"

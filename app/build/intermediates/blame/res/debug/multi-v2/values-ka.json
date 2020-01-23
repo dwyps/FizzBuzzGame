@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\Fran\\AndroidStudioProjects\\FizzBuzzDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ka\\values-ka.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Fran\\.gradle\\caches\\transforms-2\\files-2.1\\b7f123cbc3720d86b761a6f1fc780a2a\\jetified-navigation-ui-2.1.0\\res\\values-ka\\values-ka.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,164",
-                        "endColumns": "108,117",
-                        "endOffsets": "159,277"
-                    },
-                    "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2808,2917",
-                        "endColumns": "108,117",
-                        "endOffsets": "2912,3030"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Fran\\.gradle\\caches\\transforms-2\\files-2.1\\df2ac4fe6b88cbdd1c862077d2fdf1ec\\core-1.1.0\\res\\values-ka\\values-ka.xml",
                     "from": {
                         "startLines": "2",
@@ -35,6 +18,23 @@
                         "startOffsets": "3116",
                         "endColumns": "100",
                         "endOffsets": "3212"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Fran\\.gradle\\caches\\transforms-2\\files-2.1\\65e8721e40bfe0019468f92df41b3fbc\\jetified-navigation-ui-2.2.0\\res\\values-ka\\values-ka.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endColumns": "108,117",
+                        "endOffsets": "159,277"
+                    },
+                    "to": {
+                        "startLines": "29,30",
+                        "startColumns": "4,4",
+                        "startOffsets": "2808,2917",
+                        "endColumns": "108,117",
+                        "endOffsets": "2912,3030"
                     }
                 },
                 {

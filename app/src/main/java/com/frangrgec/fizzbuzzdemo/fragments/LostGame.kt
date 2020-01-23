@@ -1,4 +1,4 @@
-package com.frangrgec.fizzbuzzdemo
+package com.frangrgec.fizzbuzzdemo.fragments
 
 
 import android.os.Bundle
@@ -8,18 +8,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import kotlinx.android.synthetic.main.fragment_won_game.*
+import com.frangrgec.fizzbuzzdemo.R
+import kotlinx.android.synthetic.main.fragment_lost_game.*
 
-class WonGame : Fragment(), View.OnClickListener {
+class LostGame : Fragment(), View.OnClickListener {
 
     lateinit var navController: NavController
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_won_game, container, false)
+        return inflater.inflate(R.layout.fragment_lost_game, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,8 +35,11 @@ class WonGame : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
 
         when (v!!) {
-            tryAgainButton -> navController.navigate(R.id.action_wonGame_to_game)
-            mainMenuButton -> navController.navigate(R.id.action_wonGame_to_mainMenu)
+            tryAgainButton -> navController.navigate(R.id.action_lostGame_to_game)
+            mainMenuButton -> navController.navigate(R.id.action_lostGame_to_mainMenu)
         }
+
     }
+
+
 }

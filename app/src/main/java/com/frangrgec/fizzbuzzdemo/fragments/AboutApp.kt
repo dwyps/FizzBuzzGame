@@ -1,4 +1,4 @@
-package com.frangrgec.fizzbuzzdemo
+package com.frangrgec.fizzbuzzdemo.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.frangrgec.fizzbuzzdemo.R
 import kotlinx.android.synthetic.main.fragment_about_app.*
 
 class AboutApp : Fragment(), View.OnClickListener {
